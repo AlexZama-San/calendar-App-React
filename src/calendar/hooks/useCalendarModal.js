@@ -45,7 +45,7 @@ const onDateChange = (e, changing) => {
   })
 }
 
-const onSubmit = (event) => {
+const onSubmit = async(event) => {
   event.preventDefault();
   setFormSubmitted(true)
 
@@ -63,7 +63,7 @@ const onSubmit = (event) => {
       return;
   }
 
-  startSavingEvent(formValues);
+  await startSavingEvent(formValues);
   closeDateModal()
   setFormSubmitted(false)
 }

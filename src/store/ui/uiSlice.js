@@ -4,7 +4,6 @@ export const uiSlice = createSlice({
     name: 'ui',
     initialState: {
         isDateModalOpen: false,
-
     },
     reducers: {
         onOpenDateModal: (state) => {
